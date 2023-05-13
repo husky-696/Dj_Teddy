@@ -17,19 +17,17 @@
         <h1>Dj-Teddy</h1>
       </div>
       <div class="search-container">
-        <button id="search-btn" onclick="location.href='search.html'">Search</button>
+        <input type="text" placeholder="Search for a song..." id="search-input">
+        <button id="search-btn">Search</button>
+        <button id="recommendation-btn" onclick="location.href='home.html'">Home</button>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="welcome-container">
-      <div class="welcome-text">
-        <h1>Welcome to Dj-Teddy!</h1>
-        <p>Use the search button to go to Search and find your favorite songs and enjoy the music. You can play or pause the music using the controls at the bottom of the screen.</p>
-      </div>
-    </div>
-      
-<div class=music-player-container>
+    <div class="music-container" id="music-container"></div>
+     
+
+
     <div class="music-player">
       <div class="info">
         <img src="music.gif" id="song-img">
@@ -55,5 +53,9 @@
       </div>
     </div>
   </div>
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  <script src="script.js"></script>
+  
+  
 </body>
 </html>

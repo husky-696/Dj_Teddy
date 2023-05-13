@@ -96,6 +96,7 @@ header {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .music-container {
@@ -293,7 +294,40 @@ input[type=range]::-ms-thumb {
 
 .volume-slider {
   writing-mode: bt-lr; /* sets the orientation to vertical */
-  height: 80px;
-  transform: rotate(-90deg)
+  height: 50px;
+  transform: rotate(-50deg)
 }
 
+.message-container {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: translateY(-50%);
+  width: 500px;
+  padding: 200px;
+  padding-top: 50px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.welcome-text {
+  padding-top: 160px;
+  max-width: 8000px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 27px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-text h1 {
+  margin-bottom: 10px;
+  font-size: 48px;
+}
+
+.welcome-text p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
