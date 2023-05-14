@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Dj-Teddy</title>
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="1style.css">
 </head>
 <body>
   <div class="navbar">
@@ -25,35 +24,33 @@
     <div class="welcome-container">
       <div class="welcome-text">
         <h1>Welcome to Dj-Teddy!</h1>
-        <p>Use the search button to go to Search and find your favorite songs and enjoy the music. You can play or pause the music using the controls at the bottom of the screen.</p>
+        <p>Use the search button to go to Search and find your favorite songs and enjoy the music. You can play or pause the music using the controls at the bottom of the screen. below if you click the play button you can listen to one of my fav songs</p>
       </div>
     </div>
-      
 <div class=music-player-container>
     <div class="music-player">
       <div class="info">
-        <img src="music.gif" id="song-img">
+        <img src="logo.png" id="song-img">
         <div>
           <h2 id="song-title">Sponge bob</h2>
           <p id="song-artist">music</p>
         </div>
       </div>
       <div class="slider-container">
-        
+        <input style="accent-color: #1c1c1c" type="range" min="0" max="100" value="0" class="slider" id="slider">
       </div>
       <div class="controls">
         <div class="buttons">
+         
+          <button class="play" id="play-btn" onclick="playSong()"></button>
           <button class="pause" id="pause-btn" style="display:none" ></button>
-          <button class="play" id="play-btn" style="display:none"></button>
         </div>
         <div class="progress-container">
             <div class="progress"></div>
           </div>
-          <div class="timer">
-            <span class="duration" style="display:none">0:00 / 0:00 </span>
-          </div>
       </div>
     </div>
   </div>
+  <script src="peaches.js"></script>
 </body>
 </html>
