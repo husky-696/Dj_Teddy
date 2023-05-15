@@ -38,11 +38,11 @@ async function playTrack(trackId) {
 
     // Create a progress bar
     const progressBar = document.getElementById("slider");
-    progressBar.max = audio.duration;
 
     // Update the progress bar position as the audio plays
     audio.addEventListener("timeupdate", () => {
       progressBar.value = audio.currentTime;
+      progressBar.max = audio.duration;
     });
 
     await audio.play();
